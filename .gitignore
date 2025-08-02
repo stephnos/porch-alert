@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Runtime / secrets
+config.yaml
+logs/
+*.log
+.smtp_password
+
+# Large model binaries (see models/README.md)
+models/*.tflite
