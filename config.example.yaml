@@ -1,0 +1,31 @@
+# Copy to config.yaml and adjust.
+
+dry_run: false
+
+log_level: INFO
+log_file: logs/porch_alert.log
+
+motion_pin: 4
+
+camera:
+  backend: picamera2  # picamera2 | picamera
+  resolution: [640, 480]
+
+model_path: models/detect.tflite
+labels_path: models/coco_labels.txt
+detection_threshold: 0.4
+detection_classes:
+  - person
+
+# porch_roi: [0.0, 0.2, 1.0, 1.0]
+
+min_confirm_frames: 3
+frame_interval_seconds: 0.5
+cooldown_minutes: 15
+poll_interval_seconds: 10.0
+
+email:
+  to: stephanos@papatsaras.com
+  from: porch-alert@yourdomain.com
+  subject_prefix: "Porch alert"
+  smtp_use_ssl: false
