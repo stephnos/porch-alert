@@ -1,0 +1,150 @@
+2026-05-29 12:04:22,555 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:22,555 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:22,555 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:22,555 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:22,555 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:22,555 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:04:22,787 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:22,787 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:22,787 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:04:22,787 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:04:22,787 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:04:22,788 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:04:31,763 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:31,763 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:31,763 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:31,763 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:31,763 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:31,763 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:04:31,853 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:31,853 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:31,854 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:04:31,854 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:04:31,854 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:04:31,854 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:04:39,911 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:39,911 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:39,911 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:39,911 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:39,912 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:04:39,912 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:04:40,010 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:04:40,010 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:04:40,010 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:04:40,010 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:04:40,011 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:04:40,011 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:06:49,069 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:06:49,070 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:06:49,070 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:06:49,070 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:06:49,070 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:06:49,070 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:06:49,166 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:06:49,166 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:06:49,166 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:06:49,166 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:06:49,166 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:06:49,166 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:07:48,399 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:07:48,399 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:07:48,399 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:48,399 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:48,399 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:48,399 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:07:48,489 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:07:48,489 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:07:48,490 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:07:48,490 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:07:48,490 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:07:48,490 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:07:56,969 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:07:56,969 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:07:56,970 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:56,970 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:56,970 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:07:56,970 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:07:57,060 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:07:57,060 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:07:57,060 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:07:57,060 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:07:57,061 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:07:57,061 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:08:01,604 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:08:01,604 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:01,604 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:01,605 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:01,605 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:01,605 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:08:01,696 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:08:01,697 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:01,697 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:08:01,697 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:08:01,697 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:08:01,697 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:08:02,029 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:08:02,029 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:02,029 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,029 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,029 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,029 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:08:02,123 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:08:02,123 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:02,124 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:08:02,124 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:08:02,124 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:08:02,124 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:08:02,292 INFO __main__: dev simulate: person=yes config=config.example.yaml
+2026-05-29 12:08:02,292 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:02,293 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,293 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,293 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:08:02,293 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:08:02,404 INFO __main__: dev simulate: person=no config=config.example.yaml
+2026-05-29 12:08:02,405 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:08:02,405 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:08:02,405 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:08:02,405 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:08:02,405 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:11:15,135 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:11:15,136 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:15,136 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,136 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,137 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,137 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:11:15,232 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:11:15,232 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:15,232 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:11:15,233 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:11:15,233 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:11:15,233 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:11:15,562 INFO __main__: dev simulate: person=yes config=config.example.yaml
+2026-05-29 12:11:15,562 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:15,562 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,563 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,563 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:15,563 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:11:15,654 INFO __main__: dev simulate: person=no config=config.example.yaml
+2026-05-29 12:11:15,654 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:15,654 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:11:15,654 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:11:15,655 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:11:15,655 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:11:34,453 INFO __main__: dev simulate: person=yes config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:11:34,453 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:34,453 INFO porch_alert.main: frame=1 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:34,453 INFO porch_alert.main: frame=2 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:34,453 INFO porch_alert.main: frame=3 person=True detections=[('person', 0.9)]
+2026-05-29 12:11:34,453 INFO porch_alert.main: safety decision: alert=True reason=ok
+2026-05-29 12:11:34,545 INFO __main__: dev simulate: person=no config=/Users/spapa/projects/software-engineering/porch-alert/config.example.yaml
+2026-05-29 12:11:34,545 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:34,545 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:11:34,545 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:11:34,545 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:11:34,545 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
+2026-05-29 12:11:37,147 INFO __main__: dev simulate: person=no config=config.example.yaml
+2026-05-29 12:11:37,147 INFO porch_alert.main: components ready backend=mock dry_run=True email_to=stephanos@papatsaras.com
+2026-05-29 12:11:37,147 INFO porch_alert.main: frame=1 person=False detections=[]
+2026-05-29 12:11:37,148 INFO porch_alert.main: frame=2 person=False detections=[]
+2026-05-29 12:11:37,148 INFO porch_alert.main: frame=3 person=False detections=[]
+2026-05-29 12:11:37,148 INFO porch_alert.main: safety decision: alert=False reason=person not present in all confirmation frames
