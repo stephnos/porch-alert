@@ -1,0 +1,2 @@
+[console_scripts]
+porch-alert = porch_alert.main:run
