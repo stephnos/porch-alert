@@ -1,0 +1,15 @@
+numpy>=1.24
+Pillow>=10.0
+PyYAML>=6.0
+
+[dev]
+pytest>=7.4
+pytest-cov>=4.1
+
+[pi]
+gpiozero>=2.0
+RPi.GPIO>=0.7
+
+[pi:platform_machine == "aarch64"]
+tflite-runtime>=2.14
+picamera2>=0.3
