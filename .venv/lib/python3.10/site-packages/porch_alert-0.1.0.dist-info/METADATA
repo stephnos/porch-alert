@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: porch-alert
+Version: 0.1.0
+Summary: Raspberry Pi porch alert — motion, person detection, email
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: Pillow>=10.0
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Requires-Dist: pytest-cov>=4.1; extra == "dev"
+Provides-Extra: pi
+Requires-Dist: tflite-runtime>=2.14; platform_machine == "aarch64" and extra == "pi"
+Requires-Dist: gpiozero>=2.0; extra == "pi"
+Requires-Dist: RPi.GPIO>=0.7; extra == "pi"
+Requires-Dist: picamera2>=0.3; platform_machine == "aarch64" and extra == "pi"
+
+# Porch Alert
+
+Raspberry Pi porch monitor: PIR motion wakes the camera, TensorFlow Lite confirms a **person** across several frames, then emails a JPEG snapshot.
+
+Default recipient: `stephanos@papatsaras.com` (override with `PORCH_ALERT_EMAIL_TO`).
+
+## Wiring
+
+| Part | Pin |
+|------|-----|
+| PIR | GPIO 4 (BCM) |
+| Pi Camera | camera port |
+| Optional LED/buzzer | GPIO 26 (BCM) — not used in v1 |
+
+## Setup (no Pi — run tests)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+
+pytest -q
+python scripts/dev_simulate.py --person yes
+```
+
+`camera.backend: mock` skips Pi camera and TFLite. With `dry_run: true` in `config.example.yaml`, no SMTP connection is opened.
+
+## SMTP (Pi / production)
+
+Do not commit passwords. Set environment variables (or `PORCH_ALERT_SMTP_PASSWORD_FILE` pointing at a root-only file):
+
+| Variable | Purpose |
+|----------|---------|
+| `PORCH_ALERT_SMTP_HOST` | SMTP server |
+| `PORCH_ALERT_SMTP_PORT` | Default `587` (STARTTLS); use `465` with `smtp_use_ssl: true` |
+| `PORCH_ALERT_SMTP_USER` | Login user |
+| `PORCH_ALERT_SMTP_PASSWORD` | Password or app password |
+| `PORCH_ALERT_EMAIL_TO` | Override recipient |
+
+Copy `config.example.yaml` → `config.yaml`, set `dry_run: false`, and configure `email.from`.
+
+## Setup (Pi)
+
+```bash
+bash scripts/install_pi.sh ~/porch-alert
+```
+
+1. Download `detect.tflite` — see [models/README.md](models/README.md).
+2. Copy `config.example.yaml` → `config.yaml`, set `dry_run: false`, `camera.backend: picamera2`.
+3. Export SMTP env vars (e.g. in `/etc/systemd/system/porch-alert.service.d/override.conf`).
+4. `sudo systemctl enable --now porch-alert`
+
+## Layout
+
+- `src/porch_alert/` — application code
+- `tests/` — mocks, no hardware or network
+- `scripts/dev_simulate.py` — one simulated motion event on a laptop
+
+## Behavior
+
+- Motion → capture → person detection on each confirmation frame → safety gate → email with best-scoring frame.
+- Cooldown (default 15 minutes) blocks repeat emails.
+- Camera, model, or email errors are logged; no partial alerts are sent.
